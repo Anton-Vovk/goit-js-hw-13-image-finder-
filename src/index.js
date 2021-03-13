@@ -1,9 +1,9 @@
 import './styles.css';
 import PixabayService from './js/apiService';
 import hitsTpl from './templates/templates.hbs'
-// import { onOpenModal } from './js/modal';
+import { onOpenModal } from './js/modal';
 
-// import '../node_modules/material-design-icons'
+import '../node_modules/material-design-icons'
 const refs = getRefs();
 const pixabayService = new PixabayService();
 
