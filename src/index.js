@@ -1,6 +1,6 @@
 import './styles.css';
 import PixabayService from './js/apiService';
-import hitsTpl from './templates/templates.hbs'
+import template from './templates/templates.hbs'
 import { onOpenModal } from './js/modal';
 
 import '../node_modules/material-design-icons'
@@ -28,7 +28,7 @@ function onSearch(event) {
 }
 
 function appendHitsMarkup(hits) {
-    refs.gallery.insertAdjacentHTML('beforeend', hitsTpl(hits));
+    refs.gallery.insertAdjacentHTML('beforeend', template(hits));
 }
 
 function clearHits(){
